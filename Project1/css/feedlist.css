@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+html
+{
+	background-image: radial-gradient(  darkgrey -50%, black);
+	background-size: cover;
+}
+body
+{	
+	margin: 0;
+	min-height: 100vh;
+}
+nav
+{	
+	text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: radial-gradient(white, lightgrey);
+    background-position: bottom;
+    line-height: 1.6em;
+    margin: 0;
+    /* backdrop-filter: blur(5px); */
+    box-shadow: lightgrey 1px 6px 20px 5px;
+    justify-content: space-between;
+    min-width: 800px;
+    font-family: 'Open Sans', sans-serif;
+}
+nav p
+{	
+	margin: 0;
+	text-align: left;
+	line-height: 1.2em;
+	color: black;
+	font-size: 1.6em;
+}
+.date
+{
+	top: 0px;
+	right: 20px;
+}
+.home
+{
+	display: inline-flex;
+	flex-wrap: nowrap;
+	width: 50%;
+}
+.home p
+{
+	margin-left: 20px;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+	display: inherit;
+}
+nav a:hover
+{
+	font-weight: bolder;
+}
+.details
+{
+	margin: auto;
+	margin-top: 20px;
+}
+.details input
+{
+	font-size: 1.7em;
+	padding: 0px;
+}
+.details p
+{
+	font-size: 1.7em;
+	width:700px;
+	text-align: center;
+	font-weight: lighter;
+}
+a
+{
+	text-decoration: none;
+	color:black;
+}
+.container
+{	
+	font-size: 1.7em;
+	display: inline-block;
+}
+
+.error
+{	
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    width: 300px;
+    margin: auto;
+    background: white;
+    box-shadow: -5px 5px 10px black;
+}
+.succ
+{
+	color: blue;
+	font-size: 1.2em;
+	font-weight: bold;
+	left: 20px;
+}
+.details input,select
+{
+	padding:15px;
+	width:250px ;
+	font-size: 25px;
+	background: #ececec ;
+	border: 0px solid black; 
+	outline: none;
+	border-radius: 5px;
+	transition-delay: 0.15s;
+	background: transparent;
+	color: black;
+}
+.user input
+{
+	padding: 0px;
+}
+.inform
+{
+	text-align: center;
+	display: block;
+}
+.bg
+{
+    background: white;
+    display: flex;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+	transition: all .2s ease-in-out;
+}
+.bg:hover{
+	background: #c8ddfc;
+	transform: scale(1.01);
+}
+.bg .date{
+    display: block;
+    text-align: right;
+}
+.bg .msg{
+	width: 100%;
+    text-align: left;
+	margin-top: 20px;
+	color: #585858;
+}
+.bg .msg span{
+	font-size: larger;
+}
+.bg .details{
+	width: 70%;
+    text-align: left;
+	margin: 0px;
+	font-size: larger;
+}
+input,select,textarea
+{
+	padding:15px;
+	width:350px ;
+	font-size: 35px;
+	border: 0px solid black; 
+	outline: none;
+	border-radius: 5px;
+	transition-delay: 0.15s;
+	color: black;
+}
+.id input:disabled
+{
+	opacity: .65;
+}
+.inform textarea
+{
+	resize:none;
+	height: 80px;
+}
+label
+{
+	font-size: 20px;
+	line-height: 40px;
+	width: 200px;
+
+}
+.details input,select
+{
+	background: transparent;
+}
+.user
+{	
+	min-width: 200px;
+	display: block;
+}
+.inform .id
+{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    color: black;
+    background: white;
+}
+.id .cont
+{
+	min-width: 200px; 
+}
+.inform .id input,.inform .id select
+{
+	background: #c8ddfc;
+	width: 200px;
+	box-sizing: border-box;
+}
+.id .cont
+{
+	width: auto;
+}
+.inform .id .next,.inform .id .prev
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px; 
+	cursor: pointer;
+	font-size: 30px;
+	background: transparent;
+	margin-top: 10px;
+}
+.inform .id .next
+{
+	right: 40px;
+	background-image: url('right.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.inform .id .prev
+{
+	left:  40px;
+	background-image: url('left.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.inform .next:hover,.inform .prev:hover
+{
+	width: 60px;
+	height: 60px;
+}
+.inform .id .next:disabled,.inform .id .prev:disabled
+{
+	opacity: 0.3;
+	cursor: not-allowed;
+}
+.inform .id .next:disabled:hover,.inform .id .prev:disabled:hover
+{
+	width: 40px;
+	height: 40px;
+}
+.inform input,select,textarea
+{
+	padding: 7px;
+	width: 20%;
+	font-size: 18px;
+	border-radius: 0px;
+	outline: none;
+	background: white;
+}
+select
+{
+	width: 230px;
+	height: 40px;
+	font-size: 18px;
+}
+input.submit
+{
+    background: white;
+    width: 300px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #000000;
+    transition-duration: 0.4s;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+input.submit:hover
+{
+	background: grey;
+	color: white;
+}
+input.submit:disabled
+{
+	opacity: .5;
+}
+input.submit:disabled:hover
+{
+	background-image: linear-gradient(to bottom right, purple, #0066ff);
+	cursor: not-allowed;
+}
+.formCont
+{
+	display: inline-block;
+	width: auto;
+	margin-top: 10px;
+	vertical-align: middle;
+}
+.inform .id input.submit
+{
+	background: transparent;
+}
+.inform .id input.submit:hover
+{
+	background: lightgreen;
+}
+.id
+{
+	margin-top: 10px;
+}
+.cont
+{	
+	margin: auto;
+	text-align: left;
+	display: inline-block;
+	width: 155px;
+	margin-left: 20px;
+}
+.invis
+{
+	position: absolute;
+	left: -1700px;	
+	opacity: 0;
+}
+#output
+{
+	width: 100px;
+	height: 125px;
+	border: 2px solid black;
+	margin:auto;
+	transition-duration: 0s;
+}
+.big
+{
+	height: 600px !important;
+	width: auto !important;
+	transition-duration: 0.5s !important;
+}
+@media screen and (max-width: 1000px)
+{
+	.details label
+	{
+		font-size: 25px;
+	}
+	.details input
+	{
+		font-size: 25px;
+		width: 190px;
+	}
+	.formCont
+	{
+		width: 70%;
+	}
+	.bg
+	{
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+	.duocont input
+	{
+		width: 50%;
+	}
+}
+@media screen and (max-device-width: 1000px)
+{		
+	.formCont
+	{
+		width: 70%;
+	}
+	.bg
+	{
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+	.duocont input
+	{
+		width: 20%;
+	}
+}

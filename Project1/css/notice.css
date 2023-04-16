@@ -1,0 +1,27 @@
+form{
+    text-align: center;
+}
+input{
+    margin-bottom: 30px;
+}
+input.submit
+{
+    width: 250px;
+    background-color: #4ea5ff;
+    border: none;
+    outline: none;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 49px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 0px;
+    border-radius: 10px;
+}
+input.submit:hover
+{
+	background: #0066ff;
+	cursor: pointer;
+    
+}

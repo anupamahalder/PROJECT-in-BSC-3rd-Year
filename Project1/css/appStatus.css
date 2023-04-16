@@ -1,0 +1,374 @@
+html
+{
+	/*background-image: linear-gradient(to bottom right, #43cea259 , #185a9d78 );*/
+	background-image: url('bluebg.png');
+	background-size: cover;
+}
+body
+{	
+	overflow-x: hidden;
+	margin: 0;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+nav
+{	
+	text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(bluebg.png);
+    background-position: bottom;
+    line-height: 1.6em;
+    margin: 0;
+    /* backdrop-filter: blur(5px); */
+    box-shadow: rgb(163 247 255 / 53%) 1px 6px 20px 5px;
+    justify-content: space-between;
+    min-width: 900px;
+    font-family: 'Open Sans', sans-serif;
+}
+nav p
+{	
+	margin: 0;
+	text-align: left;
+	line-height: 1.2em;
+	color: black;
+	font-size: 1.6em;
+}
+.date
+{
+	top: 0px;
+	right: 20px;
+	width: 35%
+}
+.home
+{
+	display: inline-flex;
+	flex-wrap: nowrap;
+	width: 50%;
+}
+.home p
+{
+	margin-left: 20px;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+	display: inherit;
+}
+nav a:hover
+{
+	font-weight: bolder;
+}
+a
+{
+	text-decoration: none;
+	color:black;
+}
+.details
+{
+	margin: auto;
+	margin-top: 20px;
+}
+.details input
+{
+	font-size: 1.7em;
+	padding: 0px;
+}
+li .side
+{
+	margin-left: -8px;
+}
+form 
+{	
+	margin-top: 50px;
+}
+input,select
+{
+	padding:15px;
+	width:350px ;
+	font-size: 25px;
+	background: #ececec ;
+	border: 0px solid black; 
+	outline: none;
+	border-radius: 5px;
+	transition-delay: 0.15s;
+	background: transparent;
+	color: black;
+}
+label
+{
+	font-size: 35px;
+	line-height: 65px;
+	width: 200px;
+}
+
+.inform input,select,textarea
+{
+	padding: 7px;
+	width: 450px;
+	font-size: 35px;
+	outline: none;
+	border-radius: 0px;
+	background: transparent;
+}
+.formCont
+{
+	display: inline-block;
+	width: 45%;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+.cont
+{	
+	margin: auto;
+	text-align: left;
+	width: 420px;
+}
+.user
+{	
+	min-width: 300px;
+	display: block;
+}
+.user input
+{
+	padding: 0px;
+}
+.status
+{
+	text-align: left;
+	font-size: 30px;
+	margin-left: 10%;
+	margin-top: 70px;
+	display:inline-block;
+}
+.status ul
+{
+	margin: auto;
+	list-style: none;
+	width: 1000px;
+}
+.status li
+{
+	display: block;
+	line-height: 110px;
+	text-align: left;
+	font-size: 40px;
+	min-width: 800px;
+}
+.inform
+{
+	text-align: center;
+	display: inline-block;
+	width:90%;
+}
+.aro
+{
+    position: absolute;
+    transform: translate(3px,-30px);
+}
+.aro img
+{
+	width: 30px;
+	height: 50px;
+}
+.bg
+{
+	background: #fcfcfc;
+	margin: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	box-shadow: -9px 13px 13px 1px #4d4d4d;
+	transform : translateY(-20px); 
+	min-width: 800px;
+}
+.bg .formCont
+{
+	border: 2px solid black;
+    margin-top: 20px;
+    background: #d2ffda;
+}
+.radio
+{
+	width: 80px;
+	height: 25px;
+	display: inline-block;
+	justify-content: center;
+}
+.text
+{
+    display: inline-block;
+    min-width: 700px;
+    margin: auto;
+    color: #ff0000;
+    font-weight: bold;
+    line-height: normal;
+    background: #ffdede;
+    box-shadow: -5px 5px 10px grey;
+    padding: 5px;
+}
+
+label
+{
+	font-size: 25px;
+	line-height: 40px;
+	width: 200px;
+}
+.inRadio
+{
+	height: 25px;
+	width: 25px;
+}
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.contain
+{	
+	position: absolute;
+    width: 20px;
+    height: 510px;
+    width: 100px;
+    display: inline-block;
+    justify-content: center;
+    padding-left: 40px;
+    z-index: -1;
+}
+.line
+{
+	width: 5px;
+    height: 510px;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 25px;
+    /*background-image: linear-gradient(to bottom, #00d440 60% , #ff0000 60%  );*/
+}
+.radio .checkmark {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-top: 3px;
+	margin-right: 3px;
+	border : 5px solid #ff0000;
+}
+.radio input:checked ~ .checkmark
+{
+  background-color: white;
+  border: 5px solid #00d440;
+}
+.checkmark:after
+{
+  content: "";
+  position: absolute;
+  display: block;
+}
+.radio input:checked ~ .checkmark:after 
+{
+  display: block;
+  background: #00d440;
+}
+.radio .checkmark:after 
+{
+	top: 2.5px;
+    left: 2.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ff0000;
+}
+.invis
+{
+	position: absolute;
+	left: -1700px;
+	opacity: 0;	
+}
+@media screen and (max-width: 1000px)
+{
+	.details label
+	{
+		font-size: 25px;
+	}
+	.details input
+	{
+		font-size: 25px;
+		width: 190px;
+	}
+	.status
+	{
+		margin-left: 10px;
+	}
+	html
+	{
+		background-size: 1000px 100%;
+	}
+	body
+	{
+		overflow-x: scroll;
+	}
+}
+@media screen and (max-device-width: 1000px)
+{		
+	.details input
+	{
+		font-size: 35px;
+		width: 350px;
+	}
+	.status li
+	{
+		font-size: 40px;
+		line-height: 150px;
+	}
+	.status
+	{
+		margin-left: 10px;
+	}
+	.aro img
+	{
+		width: 40px;
+		height: 60px
+	}
+	.inRadio
+	{
+		height: 35px;
+		width: 35px;
+	}
+	.line
+	{	
+		width: 10px;
+		height: 700px;
+    	margin-left: 22px;
+    	margin-top: 39px;
+	}
+	.radio .checkmark {
+		height: 35px;
+		width: 35px;
+	}
+	.radio .checkmark:after 
+	{
+	 	top: 6px;
+		left: 6px;
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		background: #ff0000;
+	}
+		html
+	{
+		background-size: 1000px 100%;
+		overflow-x:  scroll;
+	}
+	body
+	{
+		overflow-x: hidden;
+	}
+
+}
